@@ -1,0 +1,59 @@
+<%- include('./partials/header') %> 
+
+    <%- include('./partials/nav-top') %> 
+<main>
+    <%- include('./partials/nav-lateral') %> 
+        <section class="section-index">
+            
+            <section class="today">
+                <div class="title-section">
+                    <h3>Hoy</h3>
+                </div>
+                <% for(let i = 0; i < 5; i++) {%> 
+                <section class="articles">
+                    <article class="article"><a href="/detail/<%= mails[i].id %>">
+                        <p class="title"><%= mails[i].first_name + " " + mails[i].last_name%> </p>
+                        <p class="affair"><%= mails[i].affair%></p>
+                        <p class="date"><%= mails[i].date%></p>
+                    </a>
+                <% } %> 
+                </section>
+            </section>
+            
+            <section class="last">
+                <div class="title-section">
+                    <h3>Este mes</h3>
+                </div>
+                <% for(let i = 5; i < 12; i++) {%> 
+                    <section class="articles">
+                        <article class="article"><a href="/detail/<%= mails[i].id %>">
+                            <p class="title"><%= mails[i].first_name + " " + mails[i].last_name%> </p>
+                            <p class="affair"><%= mails[i].affair%></p>
+                            <p class="date"><%= mails[i].date%></p>
+                        </a>
+                    <% } %> 
+                </section>
+            </section>
+
+            <section class="other">
+                <div class="title-section">
+                    <h3>Más antiguos</h3>
+                </div>
+                <% for(let i = 12; i < 25; i++) {%> 
+                    <section class="articles">
+                        <article class="article"><a href="/detail/<%= mails[i].id %>">
+                            <p class="title"><%= mails[i].first_name + " " + mails[i].last_name%> </p>
+                            <p class="affair"><%= mails[i].affair%></p>
+                            <p class="date"><%= mails[i].date%></p>
+                        </a>
+                    <% } %> 
+            </section>
+    
+        </section>
+        
+
+        
+</main>
+
+    </body>
+    </html>

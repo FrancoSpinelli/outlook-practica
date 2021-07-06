@@ -1,0 +1,158 @@
+@import url('./styles/nav-top.css');
+@import url('./styles/nav-lateral.css');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+li{
+  list-style-type: none;
+}
+
+p,
+i,
+a{
+  color: black;
+  text-decoration: none;
+}
+
+img{
+  max-width: 25px;
+  border-radius: 50%;
+}
+
+input[type="text"]{
+  color: rgba(7, 178, 246, 0.99);
+  background-color: #212121;
+  width: 40%;
+  height: 35px;
+  border-radius: 2px;
+  z-index: 99;
+  margin: auto 10vw;
+  padding: 8px 4px 8px 30px;
+  overflow: hidden;
+}
+
+#i-searcher{
+  position: relative;
+  left: 11.5vw;
+  top: 2.5vh;
+  z-index: 1000;
+  color: rgba(7, 178, 246, 0.99);
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  background-image: url('../images/fondo.jpg');
+  background-repeat:no-repeat;
+  width: 100%;
+  list-style-type: none;
+  height: 7vh;
+  flex-wrap: wrap;
+}
+
+
+.header p, a, i{
+  color: white;
+}
+
+.header .menu{
+  display: flex;
+  width: 10%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  background-color: rgba(7, 178, 246, 0.3);
+  padding: 12px;
+  max-height: 7vh;
+}
+
+.header .menu i{
+  font-size: 130%;
+}
+
+.header .searcher{
+  display: flex;
+  width: 65%;
+}
+
+.header .nav-top-header{
+  max-height: 7vh;
+  width: 25%;
+  background-color: rgba(7, 178, 246, 0.3);
+  padding: 12px;
+}
+
+.header .nav-top-header ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .nav-top-header ul li a, i{
+  display: flex;
+  justify-self: center;
+}
+
+.header .nav-top-header ul i{
+  font-size: 130%;
+  margin-right: 5px;
+}
+
+main{
+  display: flex;
+}
+
+.section-index{
+  border: 1px solid black;
+  margin-top: 14vh;
+  margin-left: 15vw;
+  width: 85%;
+}
+
+.section-index .title-section{
+  padding: 5px;
+  background-color: #212121;
+  border-left: black 1px solid;
+  border-right: black 1px solid;
+}
+
+.section-index h3{
+  margin: 10px 25px;
+  color: white;
+}
+
+.section-index .article a{
+  display: flex;
+  text-align: left;
+  padding: 15px;
+  background-color: rgba(33, 33, 33, 0.92);
+  border: 0.1px solid black;
+}
+
+.section-index .article p{
+  color: white;
+}
+
+.section-index .article .title{
+  width: 25%;
+  margin-left: 15px;
+}
+
+.section-index .article .affair{
+  width: 65%;
+}
+
+.section-index .article .date{
+  width: 10%;
+  text-align: center;
+}

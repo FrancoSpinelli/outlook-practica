@@ -1,0 +1,94 @@
+
+.nav-top{
+  width: 100%;
+  background: #212121;
+  padding: 3px;
+  height: 7vh;
+  margin-top: 7vh;
+  position: fixed;
+}
+  
+.nav-top ul{
+  display: flex;
+  justify-items: center;
+}
+  
+.nav-top .menu-nav{
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 5px;
+  max-height: 7vh;
+}
+
+.nav-top .menu-nav li{
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.nav-top .menu-nav li i, button{
+  display: flex;
+  align-self: center;
+  
+}
+
+.nav-top .menu-nav li i{
+  color: #96daff;
+  font-size: 160%;
+}
+
+.nav-top .menu-nav li button{
+  border-radius: 8px;
+  background-color: #96daff;
+  padding: 5px;
+  margin-left: 15px;
+  z-index: 99;
+}
+
+.nav-top .menu-nav li button p{
+  padding: 3px;
+  font-size: 16px;
+}
+
+
+.nav-top .body{
+  padding: 10px;
+  max-height: 7vh;
+  width: 85%;
+}
+
+.nav-top .body ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-top .body ul .section-nav-top,
+.nav-top .body ul .calendar{
+  display: flex;
+}
+.nav-top .body ul .section-nav-top li,
+.nav-top .body ul .calendar li{
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-top .body ul .section-nav-top li i,
+.nav-top .body ul .calendar i{
+  margin-right: 5px;
+  color: #96daff;
+}
+
+.nav-top .body ul .section-nav-top li p,
+.nav-top .body ul .calendar p{
+  color: #96daff;
+}
+
+.nav-top .body ul .calendar{
+  display: flex;
+  justify-self: center;
+  margin-right: 15px;
+}

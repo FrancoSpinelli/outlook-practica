@@ -1,0 +1,66 @@
+
+.section-nav{
+    background-color: #212121;
+    width: 15vw;
+    padding: 10px, 15px;
+    height: 86vh;
+    margin-top: 14vh;
+    position: fixed;
+    border-top: 1px solid black;
+
+}
+
+.section-nav i{
+    padding: 10px;
+}
+
+.section-nav p{
+    color: white;
+}
+
+.section-nav li a{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+.section-nav .title a p{
+    margin: 5px 0 10px 0;
+    font-size: 20px;
+}
+
+
+.section-nav .fav, .folders, .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-nav .fav div, .folders div{
+    display: flex;
+}
+
+.section-nav .fav ul, .foldes ul, .info ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-nav .info a{
+    margin-top: 50px;
+    display: flex;
+}
+
+.section-nav .info{
+    display: flex;
+    justify-items: flex-end;
+}
+
+.section-nav .info a{
+
+    display: flex;
+    justify-content: end;
+    align-content: flex-end;
+}
